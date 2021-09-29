@@ -8,4 +8,9 @@
 html {
   font-size: 14px;
 }
+
+body {
+  background: grey;
+  font-family: 'Inter', sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
