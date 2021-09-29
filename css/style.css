@@ -10,8 +10,75 @@ html {
 }
 
 body {
-  background: grey;
-  padding: 20px;
+  background: #f5f7ff;
+  padding: 25px;
+  padding-top: 35px;
   font-family: 'Inter', sans-serif;
+}
+
+.greetings {
+  margin-bottom: 2rem;
+}
+
+.greetings h1 {
+  letter-spacing: 0.3px;
+  font-size: 1.8rem;
+}
+
+.greetings .desc {
+  margin-top: 0.5rem;
+  letter-spacing: 0.3px;
+  font-weight: 700;
+  color: #63687e;
+}
+
+.switcher-area {
+  border-top: 1px solid #1e202a;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.switcher-area h2 {
+  letter-spacing: 0.3px;
+  font-weight: 700;
+  color: #63687e;
+  font-size: 1rem;
+}
+
+.switcher-area__switcher {
+  position: relative;
+  background-color: #63687e;
+  border: none;
+  padding: 15px;
+  width: 60px;
+  border-radius: 55px;
+}
+
+.switcher-area__switcher:hover > div.switcher {
+  top: 50%;
+  left: 55%;
+}
+
+.switcher-area__switcher div.switcher {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f5f7ff;
+  -webkit-transition: 100ms;
+  transition: 100ms;
 }
 /*# sourceMappingURL=style.css.map */
