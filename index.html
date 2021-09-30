@@ -20,7 +20,7 @@
   <main>
     <section class="switcher-area">
       <h2>Dark Mode</h2>
-      <div class="switcher-area__switcher"><div class="switcher"></div></div>
+      <div class="switcher-area__paddle"><div class="paddle__switcher"></div></div>
     </section>
     <section class="media-watcher">
       <div class="media-card media-card--facebook">
@@ -153,6 +153,38 @@
       </div>
     </section>
   </main>
+  <script>
+    const test_dark = document.querySelector(".switcher-area>h2");
+    const bgc = document.querySelector("body");
+    const switcher__paddle=document.querySelector(".switcher-area__paddle")
+    const paddle__switcher=document.querySelector(".paddle__switcher");
+    paddle__switcher.addEventListener("click", ()=>{
+      //{
+      // const togglingClasses = [
+      //   "dark", 
+      //   "switcher-area__paddle--dark", 
+      //   "paddle__switcher--dark", 
+      //   "dark-active"
+      // ];
+      // const toggledElements = [
+      //   bgc,
+      //   switcher__paddle,
+      //   paddle__switcher,
+      // ];
+      // for(let i = 0; i<toggledElements.length; i++){
+      //   if(i===2){
+      //     toggledElements[i].classList.toggle(togglingClasses[i]);  
+      //     toggledElements[i].classList.toggle(togglingClasses[i+1]);  
+      //   }
+      //   toggledElements[i].classList.toggle(togglingClasses[i]);
+      // };
+      //}
+      bgc.classList.toggle("dark");
+      switcher__paddle.classList.toggle("switcher-area__paddle--dark");
+      paddle__switcher.classList.toggle("paddle__switcher--dark");
+      paddle__switcher.classList.toggle("dark-active");
+      
+    })
+  </script>
 </body>
-
 </html>

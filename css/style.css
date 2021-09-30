@@ -3,6 +3,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 html {
@@ -14,6 +16,10 @@ body {
   padding: 25px;
   padding-top: 35px;
   font-family: 'Inter', sans-serif;
+}
+
+body.dark {
+  background-color: #1e202a;
 }
 
 .greetings {
@@ -53,7 +59,7 @@ body {
   font-size: 1rem;
 }
 
-.switcher-area__switcher {
+.switcher-area__paddle {
   position: relative;
   background-color: #63687e;
   border: none;
@@ -62,12 +68,12 @@ body {
   border-radius: 55px;
 }
 
-.switcher-area__switcher:hover > div.switcher {
-  top: 50%;
-  left: 55%;
+.switcher-area__paddle.switcher-area__paddle--dark {
+  background: linear-gradient(87deg, #378fe6 25%, #3eda82 75%);
 }
 
-.switcher-area__switcher div.switcher {
+.switcher-area__paddle .paddle__switcher {
+  background-color: #f5f7ff;
   position: absolute;
   top: 50%;
   left: 12%;
@@ -77,8 +83,14 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #f5f7ff;
-  -webkit-transition: 100ms;
-  transition: 100ms;
+}
+
+.switcher-area__paddle .paddle__switcher.dark-active {
+  top: 50%;
+  left: 55%;
+}
+
+.switcher-area__paddle .paddle__switcher.paddle__switcher--dark {
+  background-color: #1e202a;
 }
 /*# sourceMappingURL=style.css.map */
