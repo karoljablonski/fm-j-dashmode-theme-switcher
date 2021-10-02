@@ -104,4 +104,112 @@ body .top-pattern {
 .switcher-area__paddle .paddle__switcher.paddle__switcher--dark {
   background-color: #1e202a;
 }
+
+.media-watcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.media-watcher .media-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 330px;
+  background-color: #f0f2fa;
+  margin: 10px 0;
+  border-radius: 4px;
+  border-top: 4px solid red;
+}
+
+.media-watcher .media-card.media-card--facebook {
+  border-top-color: #198ff5;
+}
+
+.media-watcher .media-card.media-card--twitter {
+  border-top-color: #1ca0f2;
+}
+
+.media-watcher .media-card.media-card--instagram {
+  border-top: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #fdc468), color-stop(75%, #df4996));
+  background: linear-gradient(90deg, #fdc468 25%, #df4996 75%);
+}
+
+.media-watcher .media-card.media-card--youtube {
+  border-top-color: #c4032a;
+}
+
+.media-watcher .media-card .media-card__title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media-watcher .media-card .media-card__title h3 {
+  font-size: 12px;
+  color: #63687e;
+}
+
+.media-watcher .media-card .media-card__title > * {
+  margin: 25px 5px;
+}
+
+.media-watcher .media-card .media-card__number {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.media-watcher .media-card .media-card__desc {
+  font-size: 12px;
+  margin: 10px 0;
+  color: #63687e;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.media-watcher .media-card .media-card__daily-change {
+  margin: 15px 0 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.media-watcher .media-card .media-card__daily-change svg {
+  margin: 0 5px;
+}
+
+.media-watcher .media-card .media-card__daily-change.daily-change--up {
+  color: #26B58A;
+}
+
+.media-watcher .media-card .media-card__daily-change.daily-change--down {
+  color: #DC414C;
+}
 /*# sourceMappingURL=style.css.map */
