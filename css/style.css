@@ -33,6 +33,28 @@ body .top-pattern {
   z-index: -10;
 }
 
+@media (min-width: 375px) {
+  body {
+    margin: 0 auto;
+    width: 375px;
+  }
+  body .top-pattern {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 375px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+  body .top-pattern {
+    width: 1440px;
+  }
+}
+
 .greetings {
   margin-bottom: 2rem;
 }

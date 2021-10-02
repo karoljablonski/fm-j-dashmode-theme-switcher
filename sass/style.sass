@@ -23,6 +23,19 @@ body
         background-color: $very_pale_blue_l
         border-radius: 0 0 25px 25px
         z-index: -10
+@media (min-width: $mobile)
+    body
+        margin: 0 auto
+        width: $mobile
+        .top-pattern
+            left: 50%
+            transform: translateX(-50%)
+            width: $mobile
+@media (min-width: $desktop)
+    body
+        width: $desktop
+        .top-pattern
+            width: $desktop
 @import greetings.sass
 @import switcher-area.sass
 @import media-watcher.sass
