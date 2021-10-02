@@ -2,14 +2,26 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    transition: 200ms
 html
     font-size: 14px
 
 @import variables.sass
 body
-    background: $very_pale_blue_l
+    background: $white_l
     padding: 25px
     padding-top: 35px
     font-family: 'Inter', sans-serif
+    &.dark
+        background-color: $very_dark_blue_d
+    .top-pattern
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 230px
+        background-color: $very_pale_blue_l
+        border-radius: 0 0 25px 25px
+        z-index: -10
 @import greetings.sass
 @import switcher-area.sass

@@ -1,5 +1,4 @@
 .switcher-area
-    // border: 0.1px solid black
     border-top: 1px solid $very_dark_blue_l
     padding: 20px 0
     display: flex
@@ -11,18 +10,18 @@
         font-weight: 700
         color: $dark_grayish_blue_l
         font-size: 1rem
-.switcher-area__switcher
+.switcher-area__paddle
     position: relative
-    background-color: $dark_grayish_blue_l
+    background-color: $light_theme
     border: none
     padding: 15px
     width: 60px
     // height: 10px
     border-radius: 55px
-    &:hover >div.switcher
-        top: 50%
-        left: 55%
-    div.switcher
+    &.switcher-area__paddle--dark
+        background: $dark-theme
+    .paddle__switcher
+        background-color: $very_pale_blue_l
         position: absolute
         top: 50%
         left: 12%
@@ -32,5 +31,8 @@
         width: 20px
         height: 20px
         border-radius: 50%
-        background-color: $very_pale_blue_l
-        transition: 100ms
+        &.dark-active
+            top: 50%
+            left: 55%
+        &.paddle__switcher--dark
+            background-color: $very_dark_blue_d
