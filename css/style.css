@@ -77,6 +77,11 @@ body .top-pattern {
   padding: 15px;
   width: 60px;
   border-radius: 55px;
+  cursor: pointer;
+}
+
+.switcher-area__paddle:hover {
+  background: linear-gradient(87deg, #378fe6 25%, #3eda82 75%);
 }
 
 .switcher-area__paddle.switcher-area__paddle--dark {
@@ -87,7 +92,7 @@ body .top-pattern {
   background-color: #f5f7ff;
   position: absolute;
   top: 50%;
-  left: 12%;
+  left: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   cursor: pointer;
@@ -98,7 +103,7 @@ body .top-pattern {
 
 .switcher-area__paddle .paddle__switcher.dark-active {
   top: 50%;
-  left: 55%;
+  left: 12%;
 }
 
 .switcher-area__paddle .paddle__switcher.paddle__switcher--dark {
@@ -137,6 +142,11 @@ body .top-pattern {
   margin: 10px 0;
   border-radius: 4px;
   border-top: 4px solid red;
+  cursor: pointer;
+}
+
+.media-watcher .media-card:hover {
+  background-color: #e2e4ee;
 }
 
 .media-watcher .media-card.media-card--facebook {
@@ -150,6 +160,10 @@ body .top-pattern {
 .media-watcher .media-card.media-card--instagram {
   border-top: none;
   background: #f0f2fa;
+}
+
+.media-watcher .media-card.media-card--instagram:hover {
+  background-color: #e2e4ee;
 }
 
 .media-watcher .media-card.media-card--instagram::before {
@@ -261,6 +275,11 @@ body .top-pattern {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   padding: 20px 25px 20px 20px;
+  cursor: pointer;
+}
+
+.media-overwiew .media-today:hover {
+  background-color: #e2e4ee;
 }
 
 .media-overwiew .media-today > * {

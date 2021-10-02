@@ -16,15 +16,17 @@
     border: none
     padding: 15px
     width: 60px
-    // height: 10px
     border-radius: 55px
+    cursor: pointer
+    &:hover
+        background: $dark-theme
     &.switcher-area__paddle--dark
         background: $dark-theme
     .paddle__switcher
         background-color: $very_pale_blue_l
         position: absolute
         top: 50%
-        left: 12%
+        left: 55%
         transform: translateY(-50%)
         // padding: 15px
         cursor: pointer
@@ -33,6 +35,6 @@
         border-radius: 50%
         &.dark-active
             top: 50%
-            left: 55%
+            left: 12%
         &.paddle__switcher--dark
             background-color: $very_dark_blue_d
