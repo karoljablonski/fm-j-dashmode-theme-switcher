@@ -1,0 +1,41 @@
+.media-overwiew
+    margin-top: 2.5rem
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    h2
+        margin-bottom: 1.8rem
+        color: $dark_grayish_blue_l
+    .media-today
+        margin: 5px 0
+        width: 330px
+        background-color: $light_grayish_blue_l
+        border-radius: 4px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        padding: 20px 25px 20px 20px
+        &>*
+            height: 30px
+            // border: 1px solid black
+            margin: 5px
+
+        .media-today__title
+            font-size: 1em
+            color: $dark_grayish_blue_l
+            justify-self: start
+            // place-self: end
+        svg
+            // margin: 0 3px
+            justify-self: end
+        .media-today__number
+            font-size: 30px
+            font-weight: 700
+            // display: block
+            justify-self: start
+            align-self: end
+        .media-today__change
+            place-self: end
+            height: 10px
+            svg
+                margin: 0 3px

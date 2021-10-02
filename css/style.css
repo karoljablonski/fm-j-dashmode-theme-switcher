@@ -202,6 +202,13 @@ body .top-pattern {
 
 .media-watcher .media-card .media-card__daily-change {
   margin: 15px 0 20px;
+}
+
+.media-watcher .media-card .media-card__daily-change svg {
+  margin: 0 3px;
+}
+
+.daily-change--up {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -210,17 +217,85 @@ body .top-pattern {
           align-items: center;
   font-size: 12px;
   font-weight: 700;
-}
-
-.media-watcher .media-card .media-card__daily-change svg {
-  margin: 0 5px;
-}
-
-.media-watcher .media-card .media-card__daily-change.daily-change--up {
   color: #26B58A;
 }
 
-.media-watcher .media-card .media-card__daily-change.daily-change--down {
+.daily-change--down {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: 700;
   color: #DC414C;
+}
+
+.media-overwiew {
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media-overwiew h2 {
+  margin-bottom: 1.8rem;
+  color: #63687e;
+}
+
+.media-overwiew .media-today {
+  margin: 5px 0;
+  width: 330px;
+  background-color: #f0f2fa;
+  border-radius: 4px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 20px 25px 20px 20px;
+}
+
+.media-overwiew .media-today > * {
+  height: 30px;
+  margin: 5px;
+}
+
+.media-overwiew .media-today .media-today__title {
+  font-size: 1em;
+  color: #63687e;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.media-overwiew .media-today svg {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.media-overwiew .media-today .media-today__number {
+  font-size: 30px;
+  font-weight: 700;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.media-overwiew .media-today .media-today__change {
+  place-self: end;
+  height: 10px;
+}
+
+.media-overwiew .media-today .media-today__change svg {
+  margin: 0 3px;
 }
 /*# sourceMappingURL=style.css.map */
