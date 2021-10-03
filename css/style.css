@@ -33,6 +33,12 @@ body .top-pattern {
   z-index: -10;
 }
 
+@media (min-width: 1440px) {
+  body .top-pattern {
+    height: 280px;
+  }
+}
+
 @media (min-width: 375px) {
   body {
     margin: 0 auto;
@@ -55,8 +61,28 @@ body .top-pattern {
   }
 }
 
+@media (min-width: 1440px) {
+  .greetings-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .greetings {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1440px) {
+  .greetings {
+    margin-bottom: 5rem;
+  }
 }
 
 .greetings h1 {
@@ -92,6 +118,24 @@ body .top-pattern {
   font-size: 1rem;
 }
 
+@media (min-width: 1440px) {
+  .switcher-area h2 {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .switcher-area {
+    border-top: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 200px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 .switcher-area__paddle {
   position: relative;
   background-color: #aeb3cb;
@@ -114,18 +158,18 @@ body .top-pattern {
   background-color: #f5f7ff;
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 54%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   border-radius: 50%;
 }
 
 .switcher-area__paddle .paddle__switcher.dark-active {
   top: 50%;
-  left: 12%;
+  left: 8%;
 }
 
 .switcher-area__paddle .paddle__switcher.paddle__switcher--dark {

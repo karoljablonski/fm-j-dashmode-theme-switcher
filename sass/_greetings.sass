@@ -1,6 +1,12 @@
+.greetings-wrapper
+    @media(min-width: $desktop)
+        display: flex
+        justify-content: space-between
+        align-items: center
 .greetings
-    margin-bottom: 2rem
-    // width: $mobile
+    margin-bottom: 1rem
+    @media(min-width: $desktop)
+        margin-bottom: 5rem
     h1
         letter-spacing: 0.3px
         font-size: 1.8rem

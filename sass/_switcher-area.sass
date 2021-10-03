@@ -10,6 +10,13 @@
         font-weight: 700
         color: $dark_grayish_blue_l
         font-size: 1rem
+        @media (min-width: $desktop)
+            margin: 0 10px
+    @media (min-width: $desktop)
+        border-top: none
+        justify-content: flex-start
+        width: 200px
+        align-self: flex-start
 .switcher-area__paddle
     position: relative
     background-color: $light_theme
@@ -26,15 +33,15 @@
         background-color: $very_pale_blue_l
         position: absolute
         top: 50%
-        left: 55%
+        left: 54%
         transform: translateY(-50%)
         // padding: 15px
         cursor: pointer
-        width: 20px
-        height: 20px
+        width: 23px
+        height: 23px
         border-radius: 50%
         &.dark-active
             top: 50%
-            left: 12%
+            left: 8%
         &.paddle__switcher--dark
             background-color: $very_dark_blue_d
