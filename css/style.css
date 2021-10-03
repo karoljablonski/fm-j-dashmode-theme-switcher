@@ -338,6 +338,10 @@ body .top-pattern.top-pattern--dark {
   background-color: #252a41;
 }
 
+.media-watcher .media-card.media-card--dark:hover {
+  background-color: #46537e;
+}
+
 .daily-change--up {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -469,5 +473,9 @@ body .top-pattern.top-pattern--dark {
 
 .media-overwiew .media-today.media-today--dark {
   background-color: #252a41;
+}
+
+.media-overwiew .media-today.media-today--dark:hover {
+  background-color: #46537e;
 }
 /*# sourceMappingURL=style.css.map */
