@@ -3,15 +3,16 @@
     padding: 0
     box-sizing: border-box
     transition: 200ms
+@import variables.sass
 html
     font-size: 14px
 
-@import variables.sass
 body
     background: $white_l
     padding: 25px
     padding-top: 35px
     font-family: 'Inter', sans-serif
+    overflow-x: hidden
     &.dark
         background-color: $very_dark_blue_d
     .top-pattern
@@ -35,10 +36,11 @@ body
             width: $mobile
 @media (min-width: $desktop)
     body
-        width: $desktop
+        margin: 0 auto
+        width: 1440px
         padding: 35px 130px
         .top-pattern
-            width: $desktop
+            width: 100%
 @import greetings.sass
 @import switcher-area.sass
 @import media-watcher.sass

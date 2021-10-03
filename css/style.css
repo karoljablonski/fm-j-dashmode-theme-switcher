@@ -16,6 +16,7 @@ body {
   padding: 25px;
   padding-top: 35px;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 body.dark {
@@ -54,11 +55,12 @@ body .top-pattern {
 
 @media (min-width: 1440px) {
   body {
+    margin: 0 auto;
     width: 1440px;
     padding: 35px 130px;
   }
   body .top-pattern {
-    width: 1440px;
+    width: 100%;
   }
 }
 
@@ -193,8 +195,9 @@ body .top-pattern {
 
 @media (min-width: 1440px) {
   .media-watcher {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -221,7 +224,7 @@ body .top-pattern {
 
 @media (min-width: 1440px) {
   .media-watcher .media-card {
-    width: 270px;
+    width: 265px;
   }
 }
 
@@ -338,9 +341,24 @@ body .top-pattern {
           align-items: center;
 }
 
+@media (min-width: 1440px) {
+  .media-overwiew {
+    height: 350px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .media-overwiew h2 {
   margin-bottom: 1.8rem;
   color: #63687e;
+}
+
+@media (min-width: 1440px) {
+  .media-overwiew h2 {
+    width: 100%;
+  }
 }
 
 .media-overwiew .media-today {
@@ -356,6 +374,12 @@ body .top-pattern {
       grid-template-rows: 1fr 1fr;
   padding: 20px 25px 20px 20px;
   cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .media-overwiew .media-today {
+    width: 22.5%;
+  }
 }
 
 .media-overwiew .media-today:hover {
