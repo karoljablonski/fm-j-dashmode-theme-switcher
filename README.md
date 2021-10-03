@@ -33,8 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/karoljablonski/fm-j-dashmode-theme-switcher)
-- Live Site URL: [Add live site URL here](https://karoljablonski.github.io/fm-j-dashmode-theme-switcher/)
+- Live Site URL: [Github Pages](https://karoljablonski.github.io/fm-j-dashmode-theme-switcher/)
 
 ## My process
 
