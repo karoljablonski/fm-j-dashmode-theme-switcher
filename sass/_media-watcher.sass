@@ -3,6 +3,8 @@
     justify-content: center
     align-items: center
     flex-wrap: wrap
+    @media (min-width: $desktop)
+        justify-content: space-around
     .media-card
         display: flex
         flex-direction: column
@@ -14,6 +16,8 @@
         border-radius: 4px
         border-top: 4px solid red
         cursor: pointer
+        @media (min-width: $desktop)
+            width: 270px
         &:hover
             background-color: $light-hover
         &.media-card--facebook
