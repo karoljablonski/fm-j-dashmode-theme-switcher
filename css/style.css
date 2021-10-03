@@ -41,7 +41,6 @@ body .top-pattern {
 
 @media (min-width: 375px) {
   body {
-    padding: 35px 130px;
     margin: 0 auto;
     width: 375px;
   }
@@ -56,6 +55,7 @@ body .top-pattern {
 @media (min-width: 1440px) {
   body {
     width: 1440px;
+    padding: 35px 130px;
   }
   body .top-pattern {
     width: 1440px;
