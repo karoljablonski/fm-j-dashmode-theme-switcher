@@ -24,7 +24,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
-### Screenshot
+### Screenshots
 
 ![Desktop light](screenshots/desktop-light.png)
 ![Desktop dark](screenshots/desktop-dark.png)
