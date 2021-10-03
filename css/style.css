@@ -40,6 +40,10 @@ body .top-pattern {
   }
 }
 
+body .top-pattern.top-pattern--dark {
+  background-color: #1f212e;
+}
+
 @media (min-width: 375px) {
   body {
     margin: 0 auto;
@@ -91,6 +95,11 @@ body .top-pattern {
 .greetings h1 {
   letter-spacing: 0.3px;
   font-size: 1.8rem;
+  color: #1e202a;
+}
+
+.greetings h1.h1--dark {
+  color: white;
 }
 
 .greetings .desc {
@@ -98,6 +107,10 @@ body .top-pattern {
   letter-spacing: 0.3px;
   font-weight: 700;
   color: #63687e;
+}
+
+.greetings .desc.desc--dark {
+  color: #8b97c6;
 }
 
 .switcher-area {
@@ -119,6 +132,10 @@ body .top-pattern {
   font-weight: 700;
   color: #63687e;
   font-size: 1rem;
+}
+
+.switcher-area h2.h2--dark {
+  color: #8b97c6;
 }
 
 @media (min-width: 1440px) {
@@ -279,6 +296,10 @@ body .top-pattern {
   color: #63687e;
 }
 
+.media-watcher .media-card .media-card__title h3.media-card__nick--dark {
+  color: white;
+}
+
 .media-watcher .media-card .media-card__title > * {
   margin: 25px 5px;
 }
@@ -289,6 +310,10 @@ body .top-pattern {
   line-height: 1;
 }
 
+.media-watcher .media-card .media-card__number.media-card__number--dark {
+  color: white;
+}
+
 .media-watcher .media-card .media-card__desc {
   font-size: 12px;
   margin: 10px 0;
@@ -297,12 +322,20 @@ body .top-pattern {
   letter-spacing: 6px;
 }
 
+.media-watcher .media-card .media-card__desc.media-card__disc--dark {
+  color: white;
+}
+
 .media-watcher .media-card .media-card__daily-change {
   margin: 15px 0 20px;
 }
 
 .media-watcher .media-card .media-card__daily-change svg {
   margin: 0 3px;
+}
+
+.media-watcher .media-card.media-card--dark {
+  background-color: #252a41;
 }
 
 .daily-change--up {
@@ -361,6 +394,10 @@ body .top-pattern {
   }
 }
 
+.media-overwiew h2.overwiew-h2--dark {
+  color: white;
+}
+
 .media-overwiew .media-today {
   margin: 5px 0;
   width: 330px;
@@ -398,6 +435,10 @@ body .top-pattern {
       justify-self: start;
 }
 
+.media-overwiew .media-today .media-today__title.media-today__title--dark {
+  color: #8b97c6;
+}
+
 .media-overwiew .media-today svg {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -413,6 +454,10 @@ body .top-pattern {
       align-self: end;
 }
 
+.media-overwiew .media-today .media-today__number.media-today__number--dark {
+  color: white;
+}
+
 .media-overwiew .media-today .media-today__change {
   place-self: end;
   height: 10px;
@@ -420,5 +465,9 @@ body .top-pattern {
 
 .media-overwiew .media-today .media-today__change svg {
   margin: 0 3px;
+}
+
+.media-overwiew .media-today.media-today--dark {
+  background-color: #252a41;
 }
 /*# sourceMappingURL=style.css.map */

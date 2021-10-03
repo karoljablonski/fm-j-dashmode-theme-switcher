@@ -160,7 +160,45 @@
     const bgc = document.querySelector("body");
     const switcher__paddle=document.querySelector(".switcher-area__paddle")
     const paddle__switcher=document.querySelector(".paddle__switcher");
+    const topPattern = document.querySelector(".top-pattern");
+    const greetingsH1=document.querySelector(".greetings>h1")
+    const greetingsDesc=document.querySelector(".greetings>.desc");
+    const media_card=document.querySelectorAll(".media-card");
+    const media_card__number=document.querySelectorAll(".media-card__number");
+    const media_card__nick=document.querySelectorAll(".media-card__nick");
+    const media_card__desc=document.querySelectorAll(".media-card__desc");
+    const switcher_h2=document.querySelector(".switcher-area>h2");
+    const overwiew_h2=document.querySelector(".media-overwiew>h2");
+    const media_today=document.querySelectorAll(".media-today");
+    const media_today__title=document.querySelectorAll(".media-today__title");
+    const media_today__number=document.querySelectorAll(".media-today__number");
+
+
     switcher__paddle.addEventListener("click", ()=>{
+      bgc.classList.toggle("dark");
+      switcher__paddle.classList.toggle("switcher-area__paddle--dark");
+      paddle__switcher.classList.toggle("paddle__switcher--dark");
+      paddle__switcher.classList.toggle("dark-active");
+      topPattern.classList.toggle("top-pattern--dark");
+      greetingsH1.classList.toggle("h1--dark");
+      greetingsDesc.classList.toggle("desc--dark");
+      
+      for(let i =0; i < media_card.length; i++){
+        media_card[i].classList.toggle("media-card--dark");
+        media_card__number[i].classList.toggle("media-card__number--dark");
+        media_card__nick[i].classList.toggle("media-card__nick--dark");
+        media_card__desc[i].classList.toggle("media-card__disc--dark");
+      };
+      
+      switcher_h2.classList.toggle("h2--dark")
+      overwiew_h2.classList.toggle("overwiew-h2--dark");
+
+      for(let i=0; i<media_today.length; i++){
+        media_today[i].classList.toggle("media-today--dark");
+        media_today__title[i].classList.toggle("media-today__title--dark");
+        media_today__number[i].classList.toggle("media-today__number--dark");
+      }
+
       //{
       // const togglingClasses = [
       //   "dark", 
@@ -181,12 +219,11 @@
       //   toggledElements[i].classList.toggle(togglingClasses[i]);
       // };
       //}
-      bgc.classList.toggle("dark");
-      switcher__paddle.classList.toggle("switcher-area__paddle--dark");
-      paddle__switcher.classList.toggle("paddle__switcher--dark");
-      paddle__switcher.classList.toggle("dark-active");
-      
     })
+
+    //pierwszy pomysl na poprawe js:
+    //dodac do elementow zmieniajacych sie klase np. '.toDark' i po querySelectorAll togglować poszczególne klasy
+    //dodawanie poszczegolnym elementom kolorow do html, bez klasy css
   </script>
 </body>
 </html>

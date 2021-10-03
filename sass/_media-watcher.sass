@@ -46,18 +46,24 @@
             h3
                 font-size: 12px
                 color: $dark_grayish_blue_l
+                &.media-card__nick--dark
+                    color: $white_d
             &>*
                 margin: 25px 5px
         .media-card__number
             font-size: 55px
             font-weight: 700
             line-height: 1
+            &.media-card__number--dark
+                color: $white_d
         .media-card__desc
             font-size: 12px
             margin: 10px 0
             color: $dark_grayish_blue_l
             text-transform: uppercase
             letter-spacing: 6px
+            &.media-card__disc--dark
+                color: $white_d
         .media-card__daily-change
             margin: 15px 0 20px
             // display: inline-flex
@@ -66,6 +72,8 @@
             // font-weight: 700
             svg
                 margin: 0 3px
+        &.media-card--dark
+            background-color: $dark_desaturated_blue_d
 .daily-change--up
     display: inline-flex
     align-items: center

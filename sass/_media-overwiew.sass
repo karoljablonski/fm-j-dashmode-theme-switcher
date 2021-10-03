@@ -14,6 +14,8 @@
         color: $dark_grayish_blue_l
         @media (min-width: $desktop)
             width: 100%
+        &.overwiew-h2--dark
+            color: $white_d
     .media-today
         margin: 5px 0
         width: 330px
@@ -36,18 +38,21 @@
             font-size: 1em
             color: $dark_grayish_blue_l
             justify-self: start
-            // place-self: end
+            &.media-today__title--dark
+                color: $desaturated_blue_d
         svg
-            // margin: 0 3px
             justify-self: end
         .media-today__number
             font-size: 30px
             font-weight: 700
-            // display: block
             justify-self: start
             align-self: end
+            &.media-today__number--dark
+                color: $white_d
         .media-today__change
             place-self: end
             height: 10px
             svg
                 margin: 0 3px
+        &.media-today--dark
+            background-color: $dark_desaturated_blue_d
