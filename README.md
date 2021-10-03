@@ -26,11 +26,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-[Desktop light](screenshots/desktop-light.png)
-[Desktop dark](screenshots/desktop-dark.png)
-[Mobile light](screenshots/mobile-light.png)
-[Mobile dark](screenshots/mobile-dark.png)
+![Desktop light](screenshots/desktop-light.png)
+![Desktop dark](screenshots/desktop-dark.png)
+![Mobile light](screenshots/mobile-light.png)
+![Mobile dark](screenshots/mobile-dark.png)
 
 ### Links
 
